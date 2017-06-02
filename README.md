@@ -1,5 +1,7 @@
 # react-boilerplate-setup
 
+Copy over: `dist`, `src`, `.babelrc`, `.gitignore`, `postcss.config.js`, `server.js`, `webpack.config.js`.
+
 Run:
 
 ```
