@@ -1,7 +1,7 @@
 {
   "name": "react-boilerplate-setup",
   "version": "1.0.0",
-  "description": "",
+  "description": "Setup your own React, Webpack, Less, Autoprefixer Express app with no configuration.",
   "main": "src/index.js",
   "scripts": {
     "start": "node server.js --inspect",
@@ -17,9 +17,11 @@
   "keywords": [
     "react",
     "webpack",
-    "boilerplate",
+    "babel",
     "less",
-    "babel"
+    "node",
+    "express",
+    "autoprefixer"
   ],
   "author": "Arnav Aggarwal",
   "license": "MIT",
