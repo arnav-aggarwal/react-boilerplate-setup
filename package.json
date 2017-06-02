@@ -26,24 +26,5 @@
   "bugs": {
     "url": "https://github.com/arnav-aggarwal/react-boilerplate-setup/issues"
   },
-  "homepage": "https://github.com/arnav-aggarwal/react-boilerplate-setup#readme",
-  "dependencies": {
-    "express": "^4.15.3",
-    "react": "^15.5.4",
-    "react-dom": "^15.5.4"
-  },
-  "devDependencies": {
-    "autoprefixer": "^7.1.1",
-    "babel-core": "^6.24.1",
-    "babel-loader": "^7.0.0",
-    "babel-preset-latest": "^6.24.1",
-    "babel-preset-react": "^6.24.1",
-    "css-loader": "^0.28.4",
-    "less": "^2.7.2",
-    "less-loader": "^4.0.4",
-    "postcss-loader": "^2.0.5",
-    "raw-loader": "^0.5.1",
-    "style-loader": "^0.18.1",
-    "webpack": "^2.6.1"
-  }
+  "homepage": "https://github.com/arnav-aggarwal/react-boilerplate-setup#readme"
 }
