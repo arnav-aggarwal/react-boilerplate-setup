@@ -1,6 +1,8 @@
 # react-boilerplate-setup
 
-Copy over:
+Run `npm init`, enter whatever you like for prompted values
+
+Into directory, copy over:
 
 `dist`, `src`, `.babelrc`, `.gitignore`, `postcss.config.js`, `server.js`, `webpack.config.js`
 
@@ -12,7 +14,7 @@ npm i react react-dom express
 npm i -D autoprefixer babel-core babel-loader babel-preset-latest babel-preset-react css-loader less less-loader postcss-loader raw-loader style-loader webpack
 ```
 
-To the beginning of npm scripts, add:
+From npm scripts, remove the `start` script and the comma at the end of the `test` script. To the beginning of npm scripts, add:
 ```
     "start": "node server.js --inspect",
     "start-watch": "nodemon server.js --inspect",

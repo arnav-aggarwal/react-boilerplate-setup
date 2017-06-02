@@ -31,4 +31,7 @@ module.exports = {
 		],
 	},
 	devtool: 'cheap-eval-source-map',
+	watchOptions: {
+		ignored: /node_modules/,
+	},
 };
