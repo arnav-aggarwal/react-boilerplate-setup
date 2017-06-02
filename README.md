@@ -1,6 +1,8 @@
 # react-boilerplate-setup
 
-Copy over: `dist`, `src`, `.babelrc`, `.gitignore`, `postcss.config.js`, `server.js`, `webpack.config.js`.
+Copy over:
+
+`dist`, `src`, `.babelrc`, `.gitignore`, `postcss.config.js`, `server.js`, `webpack.config.js`
 
 Run:
 
@@ -17,3 +19,12 @@ To the beginning of npm scripts, add:
     "dev": "webpack -d --watch",
     "prod": "webpack -p",
 ```
+
+In separate terminals, run:
+
+```
+npm run start
+npm run dev
+```
+
+Go to [localhost: 8080](http://localhost:8080/)
