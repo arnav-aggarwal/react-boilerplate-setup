@@ -1,8 +1,6 @@
 import { TEST_ACTION } from '../actions/test-action.js';
 
-const INITIAL_STATE = 0;
-
-export default function testReducer(state = INITIAL_STATE, action) {
+export default function testReducer(state = 0, action) {
     if(action === undefined) {
         return state;
     }

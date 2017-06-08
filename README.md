@@ -19,7 +19,7 @@ From npm scripts in `package.json`, remove the `start` script and the comma at t
 Run:
 
 ```
-npm i react react-dom redux react-redux express
+npm i react react-dom redux react-redux react-router-dom express
 
 npm i -D autoprefixer babel-core babel-loader babel-preset-latest babel-preset-react css-loader less less-loader postcss-loader raw-loader style-loader webpack
 ```
