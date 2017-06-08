@@ -19,7 +19,7 @@ From npm scripts in `package.json`, remove the `start` script and the comma at t
 Run:
 
 ```
-npm i react react-dom express
+npm i react react-dom redux react-redux express
 
 npm i -D autoprefixer babel-core babel-loader babel-preset-latest babel-preset-react css-loader less less-loader postcss-loader raw-loader style-loader webpack
 ```
@@ -36,3 +36,11 @@ Go to [localhost: 8080](http://localhost:8080/)
 To bundle for production, run `npm run prod`.
 
 That's it!
+
+## To-Do
+
+Add ESLint
+
+Add react-router
+
+Simplify starter CSS
