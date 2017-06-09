@@ -21,6 +21,10 @@ export default function home() {
                 <li>React Router DOM</li>
                 <li>Less</li>
                 <li>CSS Autoprefixer</li>
+                <li>
+                    ESLint
+                    <ul><li>Using AirBNB Style Guide</li></ul>
+                </li>
             </ul>
 
             <p>This is runnning on a basic Node server using Express.</p>
