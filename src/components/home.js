@@ -1,5 +1,4 @@
 import React from 'react';
-import { Route, Link, BrowserRouter as Router } from 'react-router-dom';
 import '../styles/home.less';
 
 export default function home() {
@@ -27,4 +26,4 @@ export default function home() {
             <p>This is runnning on a basic Node server using Express.</p>
         </div>
     );
-};
+}
