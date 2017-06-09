@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import testAction from '../actions/test-action.js';
+import testAction from '../actions/test-action';
 import '../styles/sample-container.less';
 
 class SampleContainer extends Component {
@@ -10,7 +10,7 @@ class SampleContainer extends Component {
         this.incrementCounter = this.incrementCounter.bind(this);
     }
 
-    incrementCounter() { 
+    incrementCounter() {
         this.props.testAction(this.props.testValue + 1);
     }
 
@@ -19,8 +19,8 @@ class SampleContainer extends Component {
             <div className="sample-container">
                 <h1>Sample Container</h1>
                 <p>Sample redux flow can be observed below.</p>
-                <h3>Value: { this.props.testValue }</h3>
-                <button onClick={ this.incrementCounter }>Increment</button>
+                <h3>Value: {this.props.testValue}</h3>
+                <button onClick={this.incrementCounter}>Increment</button>
             </div>
         );
     }

@@ -3,23 +3,23 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import { Route, BrowserRouter as Router } from 'react-router-dom';
 
-import Header from './header.js';
-import Home from './home.js';
-import SampleContainer from './sample-container.js';
-import rootReducer from '../reducers/index.js';
+import Header from './header';
+import Home from './home';
+import SampleContainer from './sample-container';
+import rootReducer from '../reducers/index';
 import '../styles/app.less';
 
 export default function app() {
     return (
-        <Provider store={ createStore(rootReducer) }>
+        <Provider store={createStore(rootReducer)}>
             <Router>
                 <div>
                     <Header />
 
-                    <Route exact path="/" component={ Home } />
-                    <Route path="/redux-demo" component={ SampleContainer } />
+                    <Route exact path="/" component={Home} />
+                    <Route path="/redux-demo" component={SampleContainer} />
                 </div>
             </Router>
         </Provider>
     );
-};
+}

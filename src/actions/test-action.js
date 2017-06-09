@@ -4,6 +4,6 @@ export default function testAction(testValue) {
     // returning an action
     return {
         type: TEST_ACTION,
-        payload: testValue
+        payload: testValue,
     };
-};
+}

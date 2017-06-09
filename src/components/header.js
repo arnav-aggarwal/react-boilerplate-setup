@@ -9,4 +9,4 @@ export default function header() {
             <Link to="/redux-demo">Redux Demo</Link>
         </header>
     );
-};
+}
