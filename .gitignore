@@ -58,3 +58,5 @@ typings/
 .env
 
 dist/*.bundle.js
+
+.DS_store
