@@ -1,6 +1,8 @@
 const path = require('path');
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
+const CompressionPlugin = require('compression-webpack-plugin');
 
-module.exports = {
+const config = {
     entry: path.resolve(__dirname, './src/index.js'),
     output: {
         path: path.resolve(__dirname, './dist'),
@@ -32,4 +34,13 @@ module.exports = {
     watchOptions: {
         ignored: /node_modules/,
     },
+    plugins: [],
 };
+
+const PROD_ENV = !!process.argv.indexOf('-p');
+
+if (!PROD_ENV) {
+    config.plugins.push(new BundleAnalyzerPlugin());
+}
+
+module.exports = config;
