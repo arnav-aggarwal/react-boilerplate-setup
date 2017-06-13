@@ -9,7 +9,10 @@ module.exports = {
         sourceType: 'module',
     },
     parser: 'babel-eslint',
-    plugins: ['react', 'jsx-a11y', 'import'],
+    plugins: [
+        'react',
+        'jsx-a11y',
+    ],
     rules: {
         //////////////////////////////////////////
         // Starting from the top of ESLint rules//
@@ -133,7 +136,12 @@ module.exports = {
         'func-style': 0,
         'no-undefined': 0,
         'newline-after-var': 0,
+        'semi': 1,
     },
     // Applied in everse order - react/all will override eslint:all
-    extends: ['plugin:react/all', 'eslint:all'],
+    extends: [
+        'plugin:react/all',
+        'eslint:all',
+        'plugin:jsx-a11y/recommended',
+    ],
 };
