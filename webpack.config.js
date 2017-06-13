@@ -38,7 +38,7 @@ const config = {
 const PROD_ENV = process.argv.includes('-p');
 
 if (!PROD_ENV) {
-    config.plugins.push(new BundleAnalyzerPlugin());
+    // config.plugins.push(new BundleAnalyzerPlugin());
     config.devtool = 'cheap-eval-source-map';
 }
 
