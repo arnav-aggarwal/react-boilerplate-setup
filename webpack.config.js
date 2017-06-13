@@ -36,7 +36,7 @@ const config = {
     plugins: [],
 };
 
-const PROD_ENV = !!process.argv.indexOf('-p');
+const PROD_ENV = process.argv.includes('-p');
 
 if (!PROD_ENV) {
     config.plugins.push(new BundleAnalyzerPlugin());
