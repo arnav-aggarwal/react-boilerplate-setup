@@ -2,5 +2,6 @@
 	"presets": [
 		"react",
 		"latest"
-	]
+	],
+    "plugins": ["transform-object-rest-spread"]
 }
