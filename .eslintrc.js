@@ -132,6 +132,7 @@ module.exports = {
         'react/jsx-handler-names': 0,
         'func-style': 0,
         'no-undefined': 0,
+        'newline-after-var': 0,
     },
     // Applied in everse order - react/all will override eslint:all
     extends: ['plugin:react/all', 'eslint:all'],
