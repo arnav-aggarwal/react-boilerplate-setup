@@ -29,7 +29,6 @@ const config = {
             },
         ],
     },
-    devtool: 'cheap-eval-source-map',
     watchOptions: {
         ignored: /node_modules/,
     },
@@ -40,6 +39,7 @@ const PROD_ENV = process.argv.includes('-p');
 
 if (!PROD_ENV) {
     config.plugins.push(new BundleAnalyzerPlugin());
+    config.devtool = 'cheap-eval-source-map';
 }
 
 module.exports = config;
