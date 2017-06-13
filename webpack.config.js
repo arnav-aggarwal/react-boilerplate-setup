@@ -1,6 +1,5 @@
 const path = require('path');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
-const CompressionPlugin = require('compression-webpack-plugin');
 
 const config = {
     entry: path.resolve(__dirname, './src/index.js'),
@@ -30,7 +29,6 @@ const config = {
             },
         ],
     },
-    devtool: 'cheap-eval-source-map',
     watchOptions: {
         ignored: /node_modules/,
     },
@@ -39,16 +37,9 @@ const config = {
 
 const PROD_ENV = process.argv.includes('-p');
 
-if (PROD_ENV) {
-    config.plugins.push(new CompressionPlugin({
-        asset: '[path].gz[query]',
-        algorithm: 'gzip',
-        test: /\.(js|html)$/,
-        threshold: 10240,
-        minRatio: 0.8
-    }));
-} else {
+if (!PROD_ENV) {
     config.plugins.push(new BundleAnalyzerPlugin());
+    config.devtool = 'cheap-eval-source-map';
 }
 
 module.exports = config;
