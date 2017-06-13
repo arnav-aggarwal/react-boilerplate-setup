@@ -137,6 +137,8 @@ module.exports = {
         'no-undefined': 0,
         'newline-after-var': 0,
         'semi': 1,
+        'no-unused-vars': 1,
+        'keyword-spacing': 1,
     },
     // Applied in everse order - react/all will override eslint:all
     extends: [
