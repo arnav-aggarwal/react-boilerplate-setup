@@ -272,24 +272,59 @@ module.exports = {
         'template-curly-spacing': 1,
         'yield-star-spacing': 1,
 
+        //////////
+        // React//
+        //////////
+        'react/display-name': 1,
+        'react/forbid-component-props': 0,
+        // 'react/forbid-elements': not needed,
+        // 'react/forbid-prop-types': not needed,
+        // 'react/forbid-foreign-prop-types': not needed,
+        'react/no-array-index-key': 1,
+        'react/no-children-prop': 1,
+        'react/no-danger': 0,
+        'react/no-danger-with-children': 1,
+        'react/no-deprecated': 1,
+        'react/no-did-mount-set-state': 1,
+        'react/no-did-update-set-state': 1,
+        'react/no-direct-mutation-state': 2,
+        'react/no-find-dom-node': 1,
+        'react/no-is-mounted': 1,
+        'react/no-multi-comp': 0,
+        'react/no-render-return-value': 1,
+        'react/no-set-state': 0,
+        'react/no-string-refs': 1,
+        'react/no-unescaped-entities': 0,
+        'react/no-unknown-property': 1,
+        'react/no-unused-prop-types': 0, // don't need it
+        'react/no-will-update-set-state': 2,
+        'react/prefer-es6-class': 1,
+        'react/prefer-stateless-function': 1,
+        'react/prop-types': 0,
+        'react/react-in-jsx-scope': 2,
+        'react/require-default-props': 0,
+        'react/require-optimization': 0,
+        'react/require-render-return': 2,
+        'react/self-closing-comp': 1,
+        'react/sort-comp': 1,
+        'react/sort-prop-types': 0,
+        'react/style-prop-object': 1,
+        'react/void-dom-elements-no-children': 2,
+
+
         //////////////////////////////
         // Rules changed in process //
         //////////////////////////////
         'react/jsx-filename-extension': [1, { 'extensions': ['.js', '.jsx'] }],
-        'react/no-unescaped-entities': [0],
-        'react/no-array-index-key': [0],
-        'react/prop-types': [0],
-        'import/newline-after-import': [0],
         'react/jsx-indent': [2, 4],
         'react/jsx-sort-props': 0,
         'react/jsx-max-props-per-line': 0,
         'react/jsx-no-literals': 0,
-        'react/require-optimization': 0,
         'react/jsx-handler-names': 0,
         'react/jsx-no-bind': 1,
-        'react/forbid-component-props': 0,
     },
-    // Applied in everse order - react/all will override eslint:all
+
+    // Applied in reverse order - react/all will override eslint:all
     extends: [
         'plugin:react/all',
         'eslint:all',
