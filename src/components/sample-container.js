@@ -20,7 +20,7 @@ class SampleContainer extends Component {
                 <h1>Sample Container</h1>
                 <p>Sample redux flow can be observed below.</p>
                 <h3>Value: {this.props.testValue}</h3>
-                <button onClick={this.incrementCounter}>Increment</button>
+                <button onClick={ this.incrementCounter }>Increment</button>
             </div>
         );
     }

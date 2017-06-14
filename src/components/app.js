@@ -11,13 +11,13 @@ import '../styles/app.less';
 
 export default function app() {
     return (
-        <Provider store={createStore(rootReducer)}>
+        <Provider store={ createStore(rootReducer) }>
             <Router>
                 <div>
                     <Header />
 
-                    <Route exact path="/" component={Home} />
-                    <Route path="/redux-demo" component={SampleContainer} />
+                    <Route exact path="/" component={ Home } />
+                    <Route path="/redux-demo" component={ SampleContainer } />
                 </div>
             </Router>
         </Provider>
