@@ -311,23 +311,35 @@ module.exports = {
         'react/style-prop-object': 1,
         'react/void-dom-elements-no-children': 2,
 
-
-        //////////////////////////////
-        // Rules changed in process //
-        //////////////////////////////
+        ////////////////
+        // React - jxs//
+        ////////////////
+        'react/jsx-boolean-value': 1,
+        'react/jsx-closing-bracket-location': 0,
+        'react/jsx-curly-spacing': [1, 'always'],
+        'react/jsx-equals-spacing': 1,
         'react/jsx-filename-extension': [1, { 'extensions': ['.js', '.jsx'] }],
-        'react/jsx-indent': [2, 4],
-        'react/jsx-sort-props': 0,
-        'react/jsx-max-props-per-line': 0,
-        'react/jsx-no-literals': 0,
+        'react/jsx-first-prop-new-line': 0,
         'react/jsx-handler-names': 0,
+        'react/jsx-indent': [1, 4],
+        'react/jsx-indent-props': 1,
+        'react/jsx-key': 1,
+        'react/jsx-max-props-per-line': 0,
         'react/jsx-no-bind': 1,
+        'react/jsx-no-comment-textnodes': 2,
+        'react/jsx-no-duplicate-props': 2,
+        'react/jsx-no-literals': 0,
+        'react/jsx-no-target-blank': 2,
+        'react/jsx-no-undef': 2,
+        'react/jsx-pascal-case': 1,
+        'react/jsx-sort-props': 0,
+        'react/jsx-tag-spacing': 1,
+        'react/jsx-uses-react': 1,
+        'react/jsx-uses-vars': 1,
+        'react/jsx-wrap-multilines': 1,
     },
 
-    // Applied in reverse order - react/all will override eslint:all
     extends: [
-        'plugin:react/all',
-        'eslint:all',
         'plugin:jsx-a11y/recommended',
     ],
 };
