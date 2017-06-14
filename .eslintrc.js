@@ -46,7 +46,7 @@ module.exports = {
         'accessor-pairs': 1,
         'array-callback-return': 2,
         'block-scoped-var': 1,
-        'class-methods-use-this': 1,
+        'class-methods-use-this': [1, { exceptMethods: ['render'] }],
         curly: 1,
         'dot-notation': 1,
         eqeqeq: 1,
