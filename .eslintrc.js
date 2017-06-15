@@ -50,7 +50,6 @@ module.exports = {
         curly: 1,
         'dot-notation': 1,
         eqeqeq: 1,
-        'guard-for-in': 1,
         'no-alert': 1,
         'no-caller': 1,
         'no-else-return': 1,
@@ -106,8 +105,8 @@ module.exports = {
         'no-undef': 1,
         'no-undef-init': 1,
         'no-unused-vars': 1,
-        'no-use-before-define': 2,
-
+        'no-use-before-define': [2, { functions: false, classes: false }],
+        
         //////////
         // Node //
         //////////
@@ -132,7 +131,7 @@ module.exports = {
         'jsx-quotes': [1, 'prefer-double'],
         'key-spacing': 1,
         'keyword-spacing': 1,
-        'max-params': [1, 2],
+        'max-params': [1, 3],
         'new-cap': 1,
         'new-parens': 1,
         'no-array-constructor': 1,
